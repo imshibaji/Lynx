@@ -14,8 +14,7 @@ the following currencies:
 1. USD
 2. CAD
 
-The latest exchange rates can be retrieved from the public API <https://currencylayer.com/> (or
-any similar API).
+The latest exchange rates can be retrieved from the public API <https://currencylayer.com/>.
 When a list of the most viewed products is requested, the API should return the products with
 the highest view-counts. By default, the top 5 products will be returned, but the request can also
 specify a custom number of products to return. Only products with at least 1 view should be

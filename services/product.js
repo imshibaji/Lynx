@@ -2,6 +2,10 @@ const db = require('../dbc/dbconnect');
 
 class ProductService{
     static table = 'product';
+
+    static async getTop(limit = 5){
+        return await db(ProductService.table).select().where('productViewed', '>', 0).orderBy('productViewed', 'desc').limit(limit);
+    }
     static async getAll(){
         return await db(ProductService.table).select().orderBy('productViewed', 'desc');
     }
