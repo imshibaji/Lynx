@@ -134,7 +134,7 @@ URL: `http://localhost:3000/products/1`
 
 ***OR***
 
-URL: `http://localhost:3000/products/1?limit=8&from=usd&to=cad`
+URL: `http://localhost:3000/products/1?from=usd&to=cad`
 
 **Query Paramiters:**
 
