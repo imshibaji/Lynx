@@ -159,3 +159,9 @@ Output:
     "deletedDate": null
 }
 ```
+
+-----
+
+### Note
+
+Currency Converter is a paid service. when you need to be consume actual data rapidatly. For this reson when currency code change in the paramiter that time new updated data pool from the server and store that data into the currency table for future requests.
