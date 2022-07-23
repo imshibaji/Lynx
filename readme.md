@@ -138,8 +138,6 @@ URL: `http://localhost:3000/products/1?from=usd&to=cad`
 
 **Query Paramiters:**
 
-*limit*: use for output data limit.
-
 *from*: use for Base Currency Code('USD') for Product Price.
 
 *to*: use for Currency Code('CAD') to Change Price Output.
