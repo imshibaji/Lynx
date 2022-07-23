@@ -23,8 +23,6 @@ returned in that currency.
 
 ## APP Config
 
------
-
 When you start to implementaion this code for your application that time replace `.env.example` to `.env`. Then you need API_KEY for realtime currency converter. For that you can be visit and signup `https://apilayer.com/marketplace/currency_data-api` in this URL.
 
 Ater this you have to setup database informations.
@@ -43,7 +41,6 @@ DB_DATABASE=<USE_YOUR_DB_NAME>
 
 ## API Details
 
------
 Home Root: ``` http://localhost:3000/ ```
 
 output: ``` Welcome to App ```
