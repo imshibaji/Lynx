@@ -1,13 +1,16 @@
-const knex = require('knex')({
-    client: 'mysql',
-    connection: {
-        host : process.env.DB_HOST || 'remotemysql.com',
-        port : process.env.DB_PORT || 3306,
-        user : process.env.DB_USER || 'j6zQXIyB22',
-        password : process.env.DB_PASSWORD || 'r8E4xAwtmU',
-        database : process.env.DB_DATABASE || 'j6zQXIyB22'
-    },
-});
+// const knex = require('knex')({
+//     client: 'mysql',
+//     connection: {
+//         host : process.env.DB_HOST || 'remotemysql.com',
+//         port : process.env.DB_PORT || 3306,
+//         user : process.env.DB_USER || 'j6zQXIyB22',
+//         password : process.env.DB_PASSWORD || 'r8E4xAwtmU',
+//         database : process.env.DB_DATABASE || 'j6zQXIyB22'
+//     },
+// });
+
+const dblink = require('../knexfile');
+const knex = require('knex')(dblink.production);
 
 knex.raw("SELECT 1").then((res) => {
   console.log("MySQL connected");
